@@ -1,0 +1,7 @@
+body {
+    background: url('pictures/background.jpeg') repeat;
+}
+input {
+    width: 30px;
+    text-transform: uppercase;
+}
