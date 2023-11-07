@@ -5,69 +5,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Wordle Game</h1>
-    <p>Guess the 5-letter word:</p>
-    <div id="word-container">
+    <div id="wordle">
+        <div id="word-container">
+        </div>
+        <input type="text" id="guess" maxlength="5" autocomplete="off">
+        <button id="submit">Submit</button>
+        <p>Attempts left: <span id="attempts">6</span></p>
+        <div id="message"></div>
     </div>
-    <input type="text" id="guess" maxlength="5" autocomplete="off">
-    <button id="submit">Submit</button>
-    <p>Attempts left: <span id="attempts">6</span></p>
-    <div id="message"></div>
 
-    <script>
-        const words = ["apple", "beach", "cloud", "dream", "eagle", "flame", "grape", "happy", "ivory", "joker"];
+    <script src="wordle.js"></script>
 
-        // Select a random word from the array
-        const randomIndex = Math.floor(Math.random() * words.length);
-        const targetWord = words[randomIndex];
-
-        let attempts = 6;
-        let wordDisplay = Array(targetWord.length).fill('-');
-
-        const wordContainer = document.getElementById('word-container');
-        const guessInput = document.getElementById('guess');
-        const submitButton = document.getElementById('submit');
-        const attemptsSpan = document.getElementById('attempts');
-        const messageDiv = document.getElementById('message');
-
-        wordContainer.textContent = wordDisplay.join(' ');
-
-        submitButton.addEventListener('click', handleGuess);
-
-        function handleGuess() {
-            const guess = guessInput.value.toLowerCase();
-            if (guess.length !== 5 || !/^[a-z]+$/.test(guess)) {
-                alert('Please enter a valid 5-letter word.');
-                return;
-            }
-
-            if (attempts === 0) {
-                messageDiv.textContent = 'You have run out of attempts. The word was ' + targetWord + '.';
-                disableInput();
-                return;
-            }
-
-            attempts--;
-
-            for (let i = 0; i < targetWord.length; i++) {
-                if (targetWord[i] === guess[i]) {
-                    wordDisplay[i] = guess[i];
-                }
-            }
-
-            wordContainer.textContent = wordDisplay.join(' ');
-            attemptsSpan.textContent = attempts;
-
-            if (wordDisplay.join('') === targetWord) {
-                messageDiv.textContent = 'Congratulations! You guessed the word: ' + targetWord;
-                disableInput();
-            }
-        }
-
-        function disableInput() {
-            guessInput.disabled = true;
-            submitButton.disabled = true;
-        }
-    </script>
 </body>
 </html>
