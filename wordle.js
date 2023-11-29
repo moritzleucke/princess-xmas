@@ -78,7 +78,7 @@ function checkGuess() {
   //check green
   for (let i = 0; i < 5; i++) {
     if (rightGuess[i] == currentGuess[i]) {
-      letterColor[i] = "green";
+      letterColor[i] = "#00873E";
       rightGuess[i] = "#";
     }
   }
@@ -86,7 +86,7 @@ function checkGuess() {
   //check yellow
   //checking guess letters
   for (let i = 0; i < 5; i++) {
-    if (letterColor[i] == "green") continue;
+    if (letterColor[i] == "#00873E") continue;
 
     //checking right letters
     for (let j = 0; j < 5; j++) {
@@ -111,8 +111,21 @@ function checkGuess() {
 
   // TODO: print picture depending on day
   if (guessString === rightGuessString) {
-    toastr.success("richtig saui waui!");
+    toastr.success("Super Helena!");
     guessesRemaining = 0;
+    let board = document.getElementById("game-board");
+    // Create a button element
+    let jumpButton = document.createElement("button");
+    jumpButton.classList.add("jump-button");
+    // Set button properties
+    jumpButton.textContent = "Türchen ->";
+    jumpButton.addEventListener("click", function() {
+        // Redirect to a different website when the button is clicked
+        window.location.href = "success.html"; // Replace with your desired URL
+    });
+
+    // Append the button to the game-board div
+    board.appendChild(jumpButton);
     return;
   } else {
     guessesRemaining -= 1;

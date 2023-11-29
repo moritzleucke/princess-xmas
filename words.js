@@ -4,7 +4,6 @@ export const TODAYWORD = [
     'carol',
     'holly',
     'mirth',
-    'angel',
     'mince',
     'santa',
     'merry',
@@ -22,7 +21,8 @@ export const TODAYWORD = [
     'mints',
     'spice',
     'candy',    
-    'gifts'
+    'gifts',
+    'mampf'
 ]
 
 
@@ -5807,5 +5807,6 @@ export const WORDS = [
     'mints',
     'spice',
     'candy',    
-    'gifts'
+    'gifts',
+    'mampf'
   ]
