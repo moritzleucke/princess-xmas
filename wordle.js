@@ -118,7 +118,7 @@ function checkGuess() {
     let jumpButton = document.createElement("button");
     jumpButton.classList.add("jump-button");
     // Set button properties
-    jumpButton.textContent = "Türchen ->";
+    jumpButton.textContent = "Türchen öffnen";
     jumpButton.addEventListener("click", function() {
         // Redirect to a different website when the button is clicked
         window.location.href = "success.html"; // Replace with your desired URL
