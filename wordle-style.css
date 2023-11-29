@@ -40,7 +40,7 @@ body {
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 100%;
+     width: 100vw;
    }
    
    
@@ -51,11 +51,11 @@ body {
   }
   
   .keyboard-button {
-    flex: 1; /* Distribute available space equally among buttons */
+    flex: 2; /* Distribute available space equally among buttons */
     box-sizing: border-box; /* Include padding and border in the total width */
     font-size: 1rem;
     font-weight: 700;
-    padding: 0rem;
+    padding: 0.1rem;
     padding-bottom: 0.5rem;
     padding-top:0.5rem;
     margin: 0rem; /* Adjust margin for spacing between buttons */
