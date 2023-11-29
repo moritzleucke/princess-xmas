@@ -36,25 +36,30 @@ body {
    }
    
    #keyboard-cont {
-     margin: 1rem 0;
+     margin: 0rem 0;
      display: flex;
      flex-direction: column;
      align-items: center;
+     width: 100%;
    }
    
+   
+
    #keyboard-cont div {
-     display: flex;
-   }
-   
-   .second-row {
-     margin: 0.5rem 0;
-   }
-   
-   .keyboard-button {
-     font-size: 1rem;
-     font-weight: 700;
-     padding: 0.5rem;
-     margin: 0 2px;
-     cursor: pointer;
-     text-transform: uppercase;
-   }
+    display: flex;
+    width: 100%;
+  }
+  
+  .keyboard-button {
+    flex: 1; /* Distribute available space equally among buttons */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 0.1rem;
+    padding-bottom: 0.5rem;
+    padding-top:0.5rem;
+    margin: 0.05rem; /* Adjust margin for spacing between buttons */
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
