@@ -1,12 +1,24 @@
 import { WORDS } from "./words.js";
 import { TODAYWORD } from "./words.js";
 
+function getTodayDate() {
+    // Create a new Date object
+    const today = new Date();
+  
+    // Get the day of the month
+    const dayOfMonth = today.getDate();
+  
+    // Return the day of the month as an integer
+    return dayOfMonth;
+  }
+
+const todayDate = getTodayDate();
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
 // TODO: depending on day
-let rightGuessString = TODAYWORD[0];
+let rightGuessString = TODAYWORD[todayDate];
 
 console.log(rightGuessString);
 

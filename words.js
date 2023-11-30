@@ -1,5 +1,4 @@
 export const TODAYWORD = [
-    'snowy', 
     'moose', 
     'carol',
     'holly',
@@ -19,6 +18,7 @@ export const TODAYWORD = [
     'grace',
     'north',
     'mints',
+    'snowy', 
     'spice',
     'candy',    
     'gifts',
