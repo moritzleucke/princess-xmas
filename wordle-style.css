@@ -75,8 +75,33 @@ body {
 
   .jump-button {
     font-size: 1rem;
-    color: black;
+    color: white;
+    font-weight: 600;
     background-color: #00873E;
     /* Add more styles as needed */
 }
+
+  #greetings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text {
+    box-sizing: border-box;
+    width: 300px;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:0.5rem
+  }
+
+  #riddle {
+    box-sizing: border-box;
+    width: 300px;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+
+    margin-top:1rem;
+  }
   

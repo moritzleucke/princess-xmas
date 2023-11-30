@@ -8,7 +8,35 @@
     <link rel="stylesheet" href="wordle-style.css">
 </head>
 <body>
-    <img src="pictures/cal/cal-13.jpeg">
+    <div id="greetings">
+    
+    <h1 class="text"> Super Helena!</h1>
 
+    <div id="pic-container"></div>
+
+    <div id="riddle">
+        <h4>Rätsel-gegen-Snack Today:</h4>
+    </div>
+    </div>
+
+    <script src="riddles.js"></script>
+
+    <script>
+        // Get the element with the ID "riddle"
+        let picElement = document.getElementById("pic-container");
+
+        // Create a new image element
+        let imageElement = document.createElement("img");
+
+        // Set the src attribute to the path of your image file
+        imageElement.src = "pictures/cal/cal-13.jpeg"; // Replace with the actual path
+
+        // Set alternative text for accessibility
+        imageElement.alt = "wow";
+        imageElement.width = "300";
+
+        // Append the image element to the "riddle" element
+        picElement.appendChild(imageElement);
+    </script>
 </body>
 </html>

@@ -111,7 +111,6 @@ function checkGuess() {
 
   // TODO: print picture depending on day
   if (guessString === rightGuessString) {
-    toastr.success("Super Helena!");
     guessesRemaining = 0;
     let board = document.getElementById("game-board");
     // Create a button element
