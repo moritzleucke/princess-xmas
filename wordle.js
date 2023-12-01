@@ -18,7 +18,7 @@ let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
 // TODO: depending on day
-let rightGuessString = TODAYWORD[todayDate];
+let rightGuessString = TODAYWORD[todayDate-1];
 
 console.log(rightGuessString);
 

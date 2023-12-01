@@ -25,7 +25,7 @@ let riddleElement = document.getElementById("riddle");
 let paragraphElement = document.createElement("p");
 
 // Set the text content of the paragraph
-paragraphElement.textContent = RIDDLES[todayDate];
+paragraphElement.textContent = RIDDLES[todayDate-1];
 
 // Append the paragraph element to the "riddle" element
 riddleElement.appendChild(paragraphElement);
