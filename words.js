@@ -9,7 +9,7 @@ export const TODAYWORD = [
     'frost',
     'jolly',
     'peace',
-    'snowy',
+    'pupsi',
     'bells',
     'socks',
     'decor',
@@ -5808,5 +5808,6 @@ export const WORDS = [
     'spice',
     'candy',    
     'gifts',
-    'mampf'
+    'mampf',
+    'pupsi'
   ]

@@ -8,14 +8,12 @@ const RIDDLES = [
     'Du lebst in einem Haus, dessen Wände alle nach Süden ausgerichtet sind. Wo befindest du dich?',
     'Mit nur noch einem Streichholz in der Schachtel betrittst du mitten in der Nacht eine Hütte. In der Hütte findest du eine Petroleumlampe, eine Kerze und einen offenen Kamin mit etwas Holz. Was solltest du zuerst anzünden?',
     'Sechs Trinkgläser stehen in einer Reihe. Die drei links sind gefüllt, die drei rechts sind leer. Kannst du erreichen, dass immer abwechselnd ein leeres und ein volles Glas in der Reihe stehen? Du darfst dafür aber nur ein einziges Glas bewegen!',
-    'Welche der fünf Zahlen gehört da nicht hin?: <br> 2, 4, 6, 8, 10',
+    'Welche der fünf Zahlen gehört da nicht hin?:  2, 4, 6, 8, 10',
     'Sieben Kinder sitzen in einer Klasse vor der Lehrerin. Jedes Kind hat einen Rucksack. In jedem Rucksack sind drei kleine Kätzchen. Jedes Kätzchen hat vier Beine. Frage: Wie viele Beine gibt es in dieser Klasse?',
     'Ein Schmuus war 1990 zwanzig Jahre alt, 2000 war er zehn. Wie ist das möglich?',
     'In einem Mehrfamilienhaus wohnt im 1. Stock eine dreiköpfige Familie, im 2. Stock eine Familie ohne Kinder, im 3. Stock zwei Rentner und im 4. Stock eine Wahrsagerin. Welcher Aufzugsknopf wird am häufigsten gedrückt?',
     'Wenn du alle Zahlen auf der Tastatur deines Handys multiplizierst, welche Zahl erhältst du?',
-    'Was kommt als nächstes?: 77, 49, 36, 18, ...',
-    
-
+    'Was kommt als nächstes?: 77, 49, 36, 18, ...'
 ]
 function getTodayDate() {
     // Create a new Date object
