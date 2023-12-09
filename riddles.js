@@ -48,7 +48,7 @@ let picElement = document.getElementById("pic-container");
 let imageElement = document.createElement("img");
 
 // Set the src attribute to the path of your image file
-imageElement.src = `pictures/cal/cal-${todayDate}.png`; // Replace with the actual path
+imageElement.src = `pictures/cal/cal-${todayDate}.jpeg`; // Replace with the actual path
 
 // Set alternative text for accessibility
 imageElement.alt = "wow";
