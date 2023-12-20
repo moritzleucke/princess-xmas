@@ -13,7 +13,16 @@ const RIDDLES = [
     'Ein Schmuus war 1990 zwanzig Jahre alt, 2000 war er zehn. Wie ist das möglich?',
     'In einem Mehrfamilienhaus wohnt im 1. Stock eine dreiköpfige Familie, im 2. Stock eine Familie ohne Kinder, im 3. Stock zwei Rentner und im 4. Stock eine Wahrsagerin. Welcher Aufzugsknopf wird am häufigsten gedrückt?',
     'Wenn du alle Zahlen auf der Tastatur deines Handys multiplizierst, welche Zahl erhältst du?',
-    'Was kommt als nächstes?: 77, 49, 36, 18, ...'
+    'Was kommt als nächstes?: 77, 49, 36, 18, ...',
+    '',
+    '',
+    '',
+    '',
+    'I am an odd number. Take away a letter and I become even. What number am I?',
+    'Who has married many women but was never married?',
+    'A tree doubled in height each year until it reached its maximum height over the course of ten years. How many years did it take for the tree to reach half its maximum height?',
+    'What kind of room has no walls, door or windows?',
+    'Where is the only place where today comes before yesterday?',
 ]
 function getTodayDate() {
     // Create a new Date object
